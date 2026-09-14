@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from https://nobody0x.com/landing by HTTrack Website Copier/3.x [XR&CO], Sun, 13 Sep 2026 17:24:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSOC AI — Three modes. One browser. Unfiltered AI.</title>
+  <script type="module" src="auth-guard.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Script iklan pihak ketiga (quge5.com) DIHAPUS -->
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="assets/bg.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="page">
+    <header class="header">
+      <a class="logo-btn" href="index.html" aria-label="DSOC AI">
+        <img src="assets/logo.webp" alt="" width="52" height="52" />
+      </a>
+
+      <nav class="nav-pill" aria-label="Primary">
+        <span class="nav-indicator" aria-hidden="true"></span>
+        <a class="nav-link active" href="#" data-view="modes">Modes</a>
+        <a class="nav-link" href="#" data-view="features">Features</a>
+        <a class="nav-link" href="#" data-view="pro">Pro</a>
+        <a class="nav-link" href="#" data-view="faq">FAQ</a>
+      </nav>
+
+      <a class="sign-in" href="login.html" data-auth-btn="login">Sign In</a>
+      <a class="sign-in" href="#" data-auth-btn="logout" onclick="logoutDSOC(); return false;" style="display:none;">Logout</a>
+
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="views">
+      <!-- MODES — hero classic -->
+      <section id="view-modes" class="view is-active">
+        <main class="hero">
+          <div class="trust-row anim" style="--d: 0.05s">
+            <div class="avatar-ring a1"><span class="avatar-inner"><img class="avatar-logo" src="assets/models/gemini.svg" alt="Gemini" /></span></div>
+            <div class="avatar-ring a2"><span class="avatar-inner"><img class="avatar-logo" src="assets/models/claude.svg" alt="Claude" /></span></div>
+            <div class="avatar-ring a3"><span class="avatar-inner"><img class="avatar-logo" src="assets/logo.webp" alt="DSOC AI" /></span></div>
+            <div class="trust-pill">Cloud chat workspace</div>
+          </div>
+
+          <h1 class="headline">
+            <span class="line l1"><span class="txt">DSOC AI</span></span>
+            <span class="line l2"><span class="txt">Security Workspace</span></span>
+          </h1>
+
+          <p class="tagline"><span class="txt"></span></p>
+
+          <p class="subhead anim" style="--d: 0.28s">
+            Chat in the browser with file attachments, streaming answers, and voice. Switch between Security Workspace, Daily Chat, and Security Planner without leaving your session.
+          </p>
+
+          <span class="cta-wrap anim reveal-pulse" style="--d: 0.4s">
+            <a class="cta" href="login.html">Sign in with email</a>
+          </span>
+        </main>
+
+        <footer class="stats">
+          <div class="stat anim" style="--d: 0.5s">
+            <span class="stat-icon">&lt;</span>
+            <span class="stat-value" data-target="3" data-decimals="0" data-suffix="">3</span>
+            <span class="stat-label">Active Modes</span>
+          </div>
+          <div class="stat anim" style="--d: 0.58s">
+            <span class="stat-icon">$</span>
+            <span class="stat-value" data-target="16.50" data-decimals="2" data-suffix="">16.50</span>
+            <span class="stat-label">Pro / month USD</span>
+          </div>
+          <div class="stat anim" style="--d: 0.66s">
+            <span class="stat-icon">*</span>
+            <span class="stat-value" data-target="8.33" data-decimals="2" data-suffix="">8.33</span>
+            <span class="stat-label">Topup Start USD</span>
+          </div>
+          <div class="stat anim" style="--d: 0.74s">
+            <span class="stat-icon">#</span>
+            <span class="stat-value" data-target="24" data-decimals="0" data-suffix="/7">24/7</span>
+            <span class="stat-label">Cloud Workspace</span>
+          </div>
+        </footer>
+      </section>
+
+      <!-- FEATURES — card grid, bukan hero flat -->
+      <section id="view-features" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Pick the mode. Same workspace.</div>
+          <h2 class="view-title">Three modes. One workspace.</h2>
+          <p class="view-sub">Workspace, Daily, Planner — satu browser, ganti mode dari top bar.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="f-num">01</div>
+            <h3>Security Workspace</h3>
+            <p>Send files, tracebacks, code. DSOC reads context, patches <span>api.php:84</span> & keeps verification clear.</p>
+            <div class="f-tags"><span>Code</span><span>Logs</span><span>Patches</span></div>
+          </div>
+          <div class="feature-card">
+            <div class="f-num">02</div>
+            <h3>Daily Chat</h3>
+            <p>Natural talk, writing, brainstorm with voice input + Daily voice call & transcript.</p>
+            <div class="f-tags"><span>Talk</span><span>Voice</span><span>Brainstorm</span></div>
+          </div>
+          <div class="feature-card">
+            <div class="f-num">03</div>
+            <h3>Security Planner</h3>
+            <p>Layer 1 builds visual artifact plan — scope, risks, checks. Approve before execution.</p>
+            <div class="f-tags"><span>Plan</span><span>Approve</span><span>Execute</span></div>
+          </div>
+        </div>
+        <div class="feature-bar">
+          <span><i class="fa-solid fa-clock-rotate-left"></i> Sidebar history</span>
+          <span><i class="fa-solid fa-paperclip"></i> PNG / PDF / code</span>
+          <span><i class="fa-solid fa-wave-square"></i> Streaming</span>
+          <span><i class="fa-solid fa-microphone"></i> Voice</span>
+          <span><i class="fa-solid fa-shield-halved"></i> Planner gate</span>
+        </div>
+      </section>
+
+      <!-- PRO — pricing cards, bukan flat -->
+      <section id="view-pro" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Pro for daily output. Topup for credits.</div>
+          <h2 class="view-title">Simple pricing.</h2>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card pricing-free">
+            <div class="pricing-badge">Free</div>
+            <h3>Free Tier</h3>
+            <div class="pricing-price"><span class="now">Free<span></span></span><span class="hint">No card required</span></div>
+            <p class="pricing-desc">Coba workspace tanpa komitmen.</p>
+            <ul>
+              <li>5 requests / day</li>
+              <li>1 credit / month</li>
+              <li>Telegram verification</li>
+            </ul>
+            <a class="cta cta--ghost" href="login.html">Start Free</a>
+          </div>
+          <div class="pricing-card pricing-pro">
+            <div class="pricing-badge">Monthly • Popular</div>
+            <h3>DSOC Pro</h3>
+            <div class="pricing-price"><span class="was">USD 19.00</span><span class="now">USD 16.50<span>/mo</span></span></div>
+            <p class="pricing-desc">Longer sessions across all 3 modes — audits, voice calls, planner runs.</p>
+            <ul>
+              <li>No per-message deduction</li>
+              <li>Daily fair use</li>
+              <li>All 3 modes</li>
+            </ul>
+            <a class="cta cta--small" href="login.html">Start Pro</a>
+          </div>
+          <div class="pricing-card pricing-topup">
+            <div class="pricing-badge">Pay as you go</div>
+            <h3>Token Topup</h3>
+            <div class="pricing-price"><span class="now">USD 8.33<span>/min</span></span><span class="hint">Crypto • Pakasir</span></div>
+            <p class="pricing-desc">One audit, one planner run, or one long voice session.</p>
+            <ul>
+              <li>Independent from Pro</li>
+              <li>Consumed by chat & streaming</li>
+              <li>Telegram verification</li>
+            </ul>
+            <a class="cta cta--ghost" href="login.html">Top Up</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ — grid 2 kolom desktop: kiri FAQ, kanan Contacts -->
+      <section id="view-faq" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Got questions?</div>
+          <h2 class="view-title">FAQ</h2>
+          <p class="view-sub">Jawaban cepat — semua diambil langsung dari nobody0x.com</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>What are the three modes?</summary>
+              <p>Security Workspace for code and patches, Daily Chat for natural talk and voice, Security Planner for artifact-first planning with approval gate.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I attach files?</summary>
+              <p>Yes — images, PDFs, and code files (.php, .js, .py, etc.) can be sent with your message in the chat input.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What does “Unfiltered AI” mean?</summary>
+              <p>In Workspace mode, fewer soft refusals — more structure, code blocks, and file-specific answers.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Why Telegram verification?</summary>
+              <p>Blocks throwaway accounts from draining credits while letting verified users generate freely.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Need Pro before topup?</summary>
+              <p>No. Topup credits work independently with the same verification rules.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Minimum topup?</summary>
+              <p>Pakasir follows local packages. Crypto minimum is currently USD 8.33.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What are tokens used for?</summary>
+              <p>Each chat message and streamed response in the cloud workspace — across all three modes.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Tokens run out?</summary>
+              <p>Request blocked before execution. Top up or start Pro, then continue in the same workspace.</p>
+            </details>
+          </div>
+          <div class="faq-contact">
+            <div class="contact-card">
+              <div class="contact-head">Contact</div>
+              <h3>Need more help?</h3>
+              <p>Reach the DSOC AI team — we reply via Telegram & email.</p>
+              <div class="contact-rows">
+                <a href="contact.html"><i class="fa-solid fa-paper-plane"></i> nobody0x.com/contact</a>
+                <a href="mailto:admin@nobody0x.com"><i class="fa-solid fa-envelope"></i> admin@nobody0x.com</a>
+                <a href="https://x.com/nobody0x"><i class="fa-brands fa-x-twitter"></i> @nobody0x</a>
+                <a href="https://whatsapp.com/channel/0029VbA3qXa5Ejy5enHR2410"><i class="fa-brands fa-whatsapp"></i> WhatsApp Channel</a>
+              </div>
+              <a class="cta cta--small" href="contact.html">Contact Us</a>
+            </div>
+            <div class="contact-note"><i class="fa-solid fa-circle-info"></i> Telegram verification required before free usage — blocks throwaway abuse.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIVACY -->
+      <section id="view-privacy" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Updated May 27, 2026 • Scope: web app & workspace</div>
+          <h2 class="view-title">Privacy Policy</h2>
+          <p class="view-sub">How DSOC AI handles account data, verification data, billing records, workspace usage, and support requests.</p>
+        </div>
+        <div class="legal-grid">
+          <div class="legal-card">
+            <div class="legal-num">01</div>
+            <h3>Information We Collect</h3>
+            <p>We collect only what’s needed to operate the workspace and keep limits accurate.</p>
+            <ul>
+              <li>Account identity: email, display name, login provider, password hash</li>
+              <li>Telegram verification: chat ID, verified email, time, anti-abuse status</li>
+              <li>Billing records: payment method, order IDs, token batches, Pro status</li>
+              <li>Workspace usage: model requests, token consumption, errors, audit events</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">02</div>
+            <h3>How We Use Data</h3>
+            <p>To provide the product, enforce limits, and help with recovery.</p>
+            <ul>
+              <li>Authenticate & tie one Telegram identity to one email</li>
+              <li>Apply token limits, Pro entitlement, topup credits & reconciliation</li>
+              <li>Debug failed requests, quota issues, webhook events</li>
+              <li>Respond to support / legal / security requests</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">03</div>
+            <h3>Data Protection</h3>
+            <p>Server-side controls and protected configs to reduce exposure.</p>
+            <ul>
+              <li>Payment & API secrets stored server-side, not exposed to browser</li>
+              <li>Passwords stored as hashes, not plain text</li>
+              <li>AI usage can be gated until Telegram verification passes</li>
+              <li>Don’t paste passwords / private keys / seed phrases into prompts</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">04</div>
+            <h3>Retention And Requests</h3>
+            <p>Operational records may be retained while account exists or for billing/abuse/legal.</p>
+            <ul>
+              <li>Request review / correction / deletion via contact page</li>
+              <li>Some billing / anti-abuse / security records may be retained as required</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TERMS -->
+      <section id="view-terms" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Updated May 27, 2026 • Scope: web app, workspace, credits & verification</div>
+          <h2 class="view-title">Terms of Service</h2>
+          <p class="view-sub">The rules for using DSOC AI, DSOC Code, token credits, Pro subscriptions, and verification systems.</p>
+        </div>
+        <div class="legal-grid">
+          <div class="legal-card">
+            <div class="legal-num">01</div>
+            <h3>Use Of The Service</h3>
+            <p>Workspace for coding, debugging, automation, security workflows & technical generation.</p>
+            <ul>
+              <li>You’re responsible for prompts, files, commands & outputs you run</li>
+              <li>Don’t harm third-party systems, steal credentials, or violate laws</li>
+              <li>Security research only on systems you own / are authorized to test</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">02</div>
+            <h3>Accounts And Verification</h3>
+            <p>Google, email/password, Telegram verification may be required before AI usage.</p>
+            <ul>
+              <li>One Telegram identity ↔ one account email</li>
+              <li>Bypassing limits / spoofing / dummy accounts may restrict access</li>
+              <li>Keep credentials secure, report suspected unauthorized access</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">03</div>
+            <h3>Credits, Pro, And Payments</h3>
+            <p>Credits & Pro meter AI requests and longer sessions.</p>
+            <ul>
+              <li>Pakasir & crypto when enabled</li>
+              <li>Topup & Pro have different expiration / behavior</li>
+              <li>Reconciliation may take time per provider</li>
+              <li>Refunds via support with order info</li>
+            </ul>
+          </div>
+          <div class="legal-card">
+            <div class="legal-num">04</div>
+            <h3>No Warranty</h3>
+            <p>AI output can be wrong or unsafe — review before applying.</p>
+            <ul>
+              <li>You’re responsible for code changes, deployments & security decisions</li>
+              <li>Service may change, pause or fail due to maintenance / provider limits</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="view-contact" class="view">
+        <div class="view-head">
+          <div class="view-kicker">Updated May 27, 2026 • Channel: account, billing, legal, security</div>
+          <h2 class="view-title">Contact Us</h2>
+          <p class="view-sub">Reach DSOC AI for account, billing, verification, security, partnership, or product support.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-head">Support Channels</div>
+            <div class="contact-rows">
+              <a href="mailto:support@nobody0x.com"><i class="fa-solid fa-headset"></i> support@nobody0x.com — Support</a>
+              <a href="mailto:billing@nobody0x.com"><i class="fa-solid fa-credit-card"></i> billing@nobody0x.com — Billing</a>
+              <a href="mailto:security@nobody0x.com"><i class="fa-solid fa-shield-halved"></i> security@nobody0x.com — Security</a>
+              <a href="mailto:legal@nobody0x.com"><i class="fa-solid fa-scale-balanced"></i> legal@nobody0x.com — Legal</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-head">What To Include</div>
+            <ul>
+              <li>Account email & Telegram username if verification-related</li>
+              <li>Payment method / order ID / transaction ref if billing</li>
+              <li>Browser, OS, screenshot & exact error if product</li>
+              <li>Don’t send passwords / private keys / card details</li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <div class="contact-head">Security Reports</div>
+            <p>If you found a security issue, send impact, reproduction steps, affected endpoint & safe PoC.</p>
+            <ul>
+              <li>Don’t access / modify other users’ data</li>
+              <li>Don’t run destructive tests on production</li>
+              <li>Give reasonable time before public disclosure</li>
+            </ul>
+            <a class="cta cta--small" href="mailto:security@nobody0x.com">Report Security</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESKTOP IDE — DSOC Code -->
+      <section id="view-code" class="view">
+        <div class="view-head">
+          <div class="view-kicker">CLI Integration Docs • api.nobody0x.com</div>
+          <h2 class="view-title">DSOC Code</h2>
+          <p class="view-sub">Connect Claude Code, OpenCode, Cursor — no separate Anthropic key needed. Use your DSOC quota.</p>
+        </div>
+        <div class="code-grid">
+          <div class="code-card">
+            <div class="code-head"><i class="fa-solid fa-terminal"></i> Claude Code</div>
+            <h3>Drop-in provider</h3>
+            <p>Set base URL & API key, launch normally.</p>
+            <pre><code>{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.nobody0x.com",
+    "ANTHROPIC_API_KEY": "&lt;key&gt;",
+    "ANTHROPIC_MODEL": "nobody-v2-workspace"
+  }
+}</code></pre>
+            <div class="code-tags"><span>50K tokens/day Pro</span><span>Free: no API</span></div>
+          </div>
+          <div class="code-card">
+            <div class="code-head"><i class="fa-solid fa-code"></i> OpenCode</div>
+            <h3>Open-source assistant</h3>
+            <p>OpenAI-compatible endpoint for Cursor & more.</p>
+            <pre><code>{
+  "provider": {
+    "nobody": {
+      "baseURL": "https://api.nobody0x.com/v1",
+      "apiKey": "&lt;key&gt;"
+    }
+  },
+  "model": "nobody/nobody-v2-workspace"
+}</code></pre>
+            <div class="code-tags"><span>nobody-v2-workspace</span><span>nobody-pentest</span></div>
+          </div>
+          <div class="code-card">
+            <div class="code-head"><i class="fa-solid fa-plug"></i> Raw API</div>
+            <h3>Direct HTTP</h3>
+            <p>Anthropic & OpenAI compatible endpoints.</p>
+            <pre><code>curl https://api.nobody0x.com/v1/messages \
+ -H "x-api-key: &lt;key&gt;" \
+ -d '{"model":"nobody-v2-workspace"}'</code></pre>
+            <div class="code-tags"><span>/v1/messages</span><span>/v1/chat/completions</span></div>
+          </div>
+        </div>
+        <div class="code-foot">
+          <span><i class="fa-solid fa-coins"></i> Save money — no separate Anthropic bill</span>
+          <span><i class="fa-solid fa-eye-slash"></i> Jailbreak loop — fewer refusals</span>
+          <span><i class="fa-solid fa-chart-line"></i> Fully monitored — API Monitor</span>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo.webp" alt="" width="28" height="28" />
+          <div>
+            <div class="footer-title">DSOC AI</div>
+            <div class="footer-tagline">Cloud AI chat — workspace, daily, planner. Runs in your browser.</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-head">Product</div>
+            <a href="#" data-view="modes">Workspace</a>
+            <a href="#" data-view="pro">DSOC Pro</a>
+            <a href="#" data-view="code">CLI Connect</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-head">System</div>
+            <a href="#" data-view="modes">Chat modes</a>
+            <a href="#" data-view="features">Features</a>
+            <a href="#" data-view="faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-head">Legal</div>
+            <a href="#" data-view="privacy">Privacy</a>
+            <a href="#" data-view="terms">Terms</a>
+            <a href="#" data-view="contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://x.com/nobody0x" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/nobody0x" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://whatsapp.com/channel/0029VbA3qXa5Ejy5enHR2410" aria-label="Channel"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 DSOC AI</div>
+    </footer>
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay" hidden></div>
+  <nav class="mobile-menu" id="mobileMenu" hidden aria-label="Mobile navigation">
+    <span class="m-indicator" aria-hidden="true"></span>
+    <a class="m-link active" href="#" data-view="modes" style="--d: 0.04s">Modes</a>
+    <a class="m-link" href="#" data-view="features" style="--d: 0.08s">Features</a>
+    <a class="m-link" href="#" data-view="pro" style="--d: 0.12s">Pro</a>
+    <a class="m-link" href="#" data-view="faq" style="--d: 0.16s">FAQ</a>
+    <a class="m-signin" href="login.html" style="--d: 0.2s">Sign In</a>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+
+<!-- Mirrored from https://nobody0x.com/landing by HTTrack Website Copier/3.x [XR&CO], Sun, 13 Sep 2026 17:24:59 GMT -->
+</html>
